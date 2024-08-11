@@ -9,7 +9,7 @@ nav {
     background-color: #f0f0f0;
     padding: 20px;
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
     
   }
@@ -34,13 +34,13 @@ nav {
   body {
     font-family: Arial, sans-serif;
     /* margin: 20px; */
-    text-align: center;
     background-image: url('travel2.jpeg');
     background-size: 100%
   }
   
   h1 {
     margin-bottom: 20px;
+    width: 500px
   }
   
   div {
@@ -71,23 +71,27 @@ nav {
     background-color: #45a049;
   }
   
-  /* Basic CSS for the report section */
+ 
   h2 {
     margin-top: 30px;
+    width: 600px
   }
   
-  #report,#result {
+  #result {
     padding: 10px;
     max-width: 400px;
     word-wrap: break-word;
+    left: 1000px;
+    position: absolute;
   }
 #result{
   height: 400px;
   width: 500px;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-around;
   flex-direction: column;
+
 }
   #result img{
     width: 200px;

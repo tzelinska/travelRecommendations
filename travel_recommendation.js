@@ -17,7 +17,6 @@ function searchDestination() {
       .then(data => {
         let found = false;
         console.log(data);
-        console.log(input)
 
         if (input === 'beach' || input === 'beaches') {
             found = true;
@@ -45,7 +44,8 @@ function searchDestination() {
             found = true;
             console.log("country detected")
             data.countries.forEach(country => {
-                    country.forEach(destination => {
+
+                    country.cities.forEach(destination => {
                         resultDiv.innerHTML += `<div>
                                                     <img src="${destination.imageUrl}" alt="${destination.name}" />
                                                     <h2>${destination.name}</h2>
