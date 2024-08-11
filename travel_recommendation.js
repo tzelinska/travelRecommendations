@@ -16,7 +16,8 @@
           .then(response => response.json())
           .then(data => {
             let found = false;
-    
+            console.log(data);
+
             if (input === 'beach' || input === 'beaches') {
                 found = true;
                 data.beaches.forEach(destination => {
@@ -49,7 +50,7 @@
                     });
                 });
             }
-    
+            resultDiv.innerHTML
             if (!found) {
                 resultDiv.innerHTML = 'Destination not found.';
             }
@@ -61,4 +62,8 @@
     }
     
     btnSearch.addEventListener('click', searchDestination);
+
+    document.getElementById('btnClear').addEventListener('click', function() {
+        document.getElementById('result').innerHTML = '';
+    });
     
